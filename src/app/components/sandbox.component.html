@@ -1,0 +1,15 @@
+<ul>
+  <li
+  *ngFor="let person of people; let i = index">{{i +1}}. {{person}}
+  <span class="rmv" (click)="removePerson(i)">&times;</span>
+</li>
+</ul>
+
+<input
+  type="text"
+  placeholder="add something"
+  [(ngModel)]="person"
+  >
+<button
+  (click)="addPerson()"
+>Add crap</button>
